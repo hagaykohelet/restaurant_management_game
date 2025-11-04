@@ -18,6 +18,3 @@ class MenuItem:
 
 
 
-s = MenuItem("hagay",21,"drink")
-s.set_available(False)
-print(s.is_available())
