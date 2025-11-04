@@ -17,15 +17,9 @@ class Staff:
         return self.energy < 30
 
     def get_info(self):
-        return f"name: {self.name} his salary: {self.salary} energy: {self.energy}"
+        return f"name: {self.name} role: {self.__class__.__name__} his salary: {self.salary} energy: {self.energy}"
 
 
 
-# s1= Staff("djgf",1324)
-# s1.work()
-# s1.work()
-# s1.work()
-# s1.rest()
-# print(s1.get_info())
 
 
