@@ -6,7 +6,7 @@ class MenuItem:
         self.available = True
 
     def get_info(self):
-        return f"costumer: {self.name} price: {self.price} is order from {self.category}"
+        return f"costumer: {self.name} price: {self.price} this order from: {self.category}"
 
     def set_available(self,status:bool):
         self.available = status
