@@ -8,4 +8,13 @@ from classes.restaurant import Restaurant
 from classes.menu import Menu
 
 if __name__ == "__main__":
-    pass
+    menuitem1 = MenuItem("pizza",50,"dairy")
+    menuitem2 = MenuItem("meet",70,"meet")
+    menuitem2.set_available(False)
+    menu = Menu()
+    menu.add_items(menuitem1)
+    menu.add_items(menuitem2)
+    menu.display_menu()
+
+    customer = Customer("hagay")
+

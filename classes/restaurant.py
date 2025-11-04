@@ -17,6 +17,5 @@ class Restaurant:
         self.staff.remove(staff_name)
 
     def create_order(self,customer):
-        new_order = Order(customer,0)
-        while True:
-            pass
+        self.orders.append(Order(customer,0))
+

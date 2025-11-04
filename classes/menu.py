@@ -13,7 +13,7 @@ class Menu:
         for item in self.items:
             if item.name == name:
                 return item.name
-        return f"{name} not found"
+
 
     def get_item_by_category(self,category):
         items_category = []
@@ -25,7 +25,8 @@ class Menu:
     def display_menu(self):
         for item in self.items:
             if item.available:
-                print(f"item: {item.name} category: {item.category}")
+
+                print(f"item: {item.name} ,category: {item.category}")
 
     def get_total_items(self):
         count_items = 0

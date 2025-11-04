@@ -12,12 +12,12 @@ class Waiter(Staff):
         new_order = Order(customer,0)
         while True:
             menu.display_menu()
-            choice = input("please choice something from menu or Q for exit")
-            for item in menu.items:
-                if choice == item.name:
-                    new_order.add_item(choice)
-                if choice == "Q":
+            choice = input("please choice from menu")
+
+            new_order.add_item(menu.get_item_by_name(choice))
+            if new_order == "Q":
                     break
+
             return new_order
 
     def serve_order(self,order:Order):
